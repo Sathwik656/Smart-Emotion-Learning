@@ -1,4 +1,4 @@
-# 🧠 Smart Emotion — AI-Powered Adaptive Learning Platform
+# Smart Emotion — AI-Powered Adaptive Learning Platform
 
 <div align="center">
 
@@ -19,43 +19,43 @@
 
 ---
 
-## 📖 Overview
+## Overview
 
 **Smart Emotion** bridges the gap between static online learning and truly personalized education. Using computer vision and deep learning, it continuously monitors a learner's emotional state through their webcam. When a learner appears confused, bored, or frustrated, the platform **automatically adapts** — switching content format, difficulty level, or pacing — to keep them engaged and learning effectively.
 
-### 🎯 Key Highlights
+### Key Highlights
 
-- 🎥 **Real-time webcam emotion detection** via a 5-second polling loop
-- 🤖 **Deep learning model** (TensorFlow/Keras) trained on 7 core emotions
-- 📚 **Adaptive content engine** that maps detected emotions to curated learning rules
-- 📊 **Admin analytics dashboard** with emotion trend visualization
-- 🔐 **JWT-secured REST API** with role-based access control
-- ⚡ **Production-grade architecture** with three fully decoupled services
+- **Real-time webcam emotion detection** via a 5-second polling loop
+- **Deep learning model** (TensorFlow/Keras) trained on 7 core emotions
+- **Adaptive content engine** that maps detected emotions to curated learning rules
+- **Admin analytics dashboard** with emotion trend visualization
+- **JWT-secured REST API** with role-based access control
+- **Production-grade architecture** with three fully decoupled services
 
 ---
 
-## ✨ Features
+## Features
 
-### 👤 Learner Experience
+### Learner Experience
 - **Seamless Webcam Integration** — Captures frames and sends them for analysis without interrupting the learning session
 - **Adaptive Content Delivery** — Dynamically swaps content (videos, articles, quizzes) based on emotional state
 - **Live Emotion Feedback** — Subtle UI indicator showing detected emotion in real time
 - **Learning Session Tracker** — Persistent session state across page navigation
 
-### 🛡️ Authentication & Security
+### Authentication & Security
 - Secure **JWT-based authentication** (access token per session)
 - Password hashing with **bcryptjs**
 - Input validation via **Joi** schemas
 - HTTP security headers via **Helmet**
 - Rate limiting to prevent API abuse
 
-### 📊 Admin Dashboard
+### Admin Dashboard
 - **Emotion trend charts** (Recharts) across all learners and sessions
 - **Per-user emotion history** with timestamp logs
 - **Content performance metrics** — which content types work best per emotion
 - **User management panel**
 
-### 🧠 ML / Emotion Detection
+### ML / Emotion Detection
 - **7-class emotion classifier**: `angry`, `disgust`, `fear`, `happy`, `neutral`, `sad`, `surprise`
 - **Haar Cascade** face detection for preprocessing
 - **TensorFlow/Keras** model served via FastAPI
@@ -63,7 +63,7 @@
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
@@ -110,7 +110,7 @@ Frontend renders updated content
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Layer | Technology | Purpose |
 |-------|-----------|---------|
@@ -131,7 +131,7 @@ Frontend renders updated content
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 Smart-Emotion/
@@ -198,7 +198,7 @@ Smart-Emotion/
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -276,7 +276,7 @@ MODEL_PATH=./model/emotion_model.h5
 CASCADE_PATH=./haarcascade/haarcascade_frontalface_default.xml
 ```
 
-> ⚠️ Place your trained Keras model at `mlService/model/emotion_model.h5`. The Haar Cascade XML is bundled under `mlService/haarcascade/`.
+> Place your trained Keras model at `mlService/model/emotion_model.h5`. The Haar Cascade XML is bundled under `mlService/haarcascade/`.
 
 Start the ML service:
 
@@ -312,7 +312,7 @@ npm run dev
 
 ---
 
-### 5. All Services Running ✅
+### 5. All Services Running 
 
 | Service | URL | Status |
 |---------|-----|--------|
@@ -322,7 +322,7 @@ npm run dev
 
 ---
 
-## 📡 API Reference
+## API Reference
 
 ### Authentication
 
@@ -363,7 +363,7 @@ npm run dev
 
 ---
 
-## 🔐 Environment Variables
+## Environment Variables
 
 ### Backend (`backend/.env`)
 
@@ -391,7 +391,7 @@ npm run dev
 
 ---
 
-## 🧩 Database Models
+## Database Models
 
 ### `User`
 ```
@@ -415,7 +415,7 @@ id, title, type (video | article | quiz), url, difficulty, emotion (targeted), c
 
 ---
 
-## 🤖 Emotion Classes
+## Emotion Classes
 
 The ML model detects the following 7 emotions:
 
@@ -431,7 +431,7 @@ The ML model detects the following 7 emotions:
 
 ---
 
-## 🧪 Running Tests
+## Running Tests
 
 ```bash
 # Backend API integration tests
@@ -445,7 +445,7 @@ npm run lint
 
 ---
 
-## 📦 Scripts Reference
+## Scripts Reference
 
 ### Backend
 
@@ -467,7 +467,7 @@ npm run lint
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please follow these steps:
 
@@ -481,17 +481,9 @@ Please ensure all PRs pass linting checks and include relevant documentation upd
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the **ISC License**. See the [LICENSE](LICENSE) file for details.
-
----
-
-## 👨‍💻 Author
-
-Built with ❤️ as a production-grade AI-powered learning platform.
-
-> *Smart Emotion — Because how you feel matters as much as what you learn.*
 
 ---
 
